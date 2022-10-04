@@ -1,0 +1,56 @@
+package models
+
+type ANNUALMICRODATAREC struct {
+	ANNUALCORNUMBER     string `pic:"1,12"`
+	ANNUALCORNAME       string `pic:"13,204"`
+	ANNUALCORSTATUS     string `pic:"205,205"`
+	ANNUALCORFILINGTYPE string `pic:"206,220"`
+
+	ANNUALCOR2NDMAILS []ANNUALCOR2NDMAILS `pic:"221,472,2"`
+
+	ANNUALCORFILEDATE        string `pic:"473,480"`
+	ANNUALCORFEINUMBER       string `pic:"481,494"`
+	ANNUALMORETHANSIXOFFFLAG string `pic:"495,495"`
+	ANNUALLASTTRXDATE        string `pic:"496,503"`
+	ANNUALSTATECOUNTRY       string `pic:"504,505"`
+	ANNUALREPORTYEAR1        string `pic:"506,509"`
+	ANNUALHOUSEFLAG1         string `pic:"510,510"`
+	ANNUALREPORTDATE1        string `pic:"511,518"`
+	ANNUALREPORTYEAR2        string `pic:"519,522"`
+	ANNUALHOUSEFLAG2         string `pic:"523,523"`
+	ANNUALREPORTDATE2        string `pic:"524,531"`
+	ANNUALREPORTYEAR3        string `pic:"532,535"`
+	ANNUALHOUSEFLAG3         string `pic:"536,536"`
+	ANNUALREPORTDATE3        string `pic:"537,544"`
+	ANNUALRANAME             string `pic:"545,586"`
+	ANNUALRANAMETYPE         string `pic:"587,587"`
+	ANNUALRAADD1             string `pic:"588,629"`
+	ANNUALRACITY             string `pic:"630,657"`
+	ANNUALRASTATE            string `pic:"658,659"`
+	ANNUALRAZIP5             string `pic:"660,664"`
+	ANNUALRAZIP4             string `pic:"665,668"`
+
+	ANNUALPRINCIPALS []ANNUALPRINCIPALS `pic:"669,1436,6"`
+
+	FILLER string `pic:"1437,1440"`
+}
+
+type ANNUALCOR2NDMAILS struct {
+	ANNUALCOR2NDMAILADD1    string `pic:"1,42"`
+	ANNUALCOR2NDMAILADD2    string `pic:"43,84"`
+	ANNUALCOR2NDMAILCITY    string `pic:"85,112"`
+	ANNUALCOR2NDMAILSTATE   string `pic:"113,114"`
+	ANNUALCOR2NDMAILZIP     string `pic:"115,124"`
+	ANNUALCOR2NDMAILCOUNTRY string `pic:"125,126"`
+}
+
+type ANNUALPRINCIPALS struct {
+	ANNUALPRINCTITLE    string `pic:"1,4"`
+	ANNUALPRINCNAMETYPE string `pic:"5,5"`
+	ANNUALPRINCNAME     string `pic:"6,47"`
+	ANNUALPRINCADD1     string `pic:"48,89"`
+	ANNUALPRINCCITY     string `pic:"90,117"`
+	ANNUALPRINCSTATE    string `pic:"118,119"`
+	ANNUALPRINCZIP5     string `pic:"120,124"`
+	ANNUALPRINCZIP4     string `pic:"125,128"`
+}
